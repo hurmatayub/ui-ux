@@ -1,6 +1,7 @@
 export interface CarType {
   id: string;
   name: string;
+  category: string;
   count: number;
   icon: string;
 }
@@ -25,11 +26,11 @@ export interface ReviewType {
 export interface CarCardProps {
   name: string;
   type: string;
-  image: string;
   fuel: string;
-  transmission: string;
   capacity: string;
+  transmission: string;
   price: number;
   originalPrice?: number;
+  image: string;
   isFavorite: boolean;
 }

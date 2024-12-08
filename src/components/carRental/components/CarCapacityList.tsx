@@ -1,10 +1,8 @@
-import * as React from "react";
+import React from "react";
 import { CarCapacity } from "../types";
 
 interface CarCapacityListProps {
   capacities: CarCapacity[];
-  selectedCapacity?: string;
-  onSelect?: (capacity: string) => void;
 }
 
 export const CarCapacityList: React.FC<CarCapacityListProps> = ({
@@ -22,8 +20,8 @@ export const CarCapacityList: React.FC<CarCapacityListProps> = ({
             <img
               loading="lazy"
               src={capacity.icon}
-              alt=""
               className="object-contain shrink-0 w-6 aspect-square"
+              alt={`${capacity.capacity} icon`}
             />
             <div className="w-36">
               <span className="text-slate-500">{capacity.capacity}</span> (

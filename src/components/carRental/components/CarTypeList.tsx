@@ -1,10 +1,8 @@
-import * as React from "react";
+import React from "react";
 import { CarType } from "../types";
 
 interface CarTypeListProps {
   types: CarType[];
-  selectedType?: string;
-  onSelect?: (type: string) => void;
 }
 
 export const CarTypeList: React.FC<CarTypeListProps> = ({ types }) => {
@@ -17,8 +15,8 @@ export const CarTypeList: React.FC<CarTypeListProps> = ({ types }) => {
             <img
               loading="lazy"
               src={type.icon}
-              alt=""
               className="object-contain shrink-0 w-6 aspect-square"
+              alt={`${type.name} icon`}
             />
             <div className="w-36">
               <span className="text-slate-500">{type.name}</span> ({type.count})
