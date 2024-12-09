@@ -1,98 +1,72 @@
-"use client";
-import * as React from "react";
-
-interface IconProps {
-  src: string;
-  alt: string;
-  className?: string;
-}
-
-interface SearchBarProps {
-  onSearch?: (value: string) => void;
-}
-
-interface NavigationIconsProps {
-  icons: IconProps[];
-}
-
-const Icon: React.FC<IconProps> = ({ src, alt, className }) => (
-  <img
-    loading="lazy"
-    src={src}
-    alt={alt}
-    className={`object-contain shrink-0 aspect-square ${className}`}
-  />
-);
-
-const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => (
-  <div className="flex flex-wrap flex-auto gap-10 px-5 py-2.5 text-sm font-medium tracking-tight text-justify bg-white border border-solid border-slate-300 border-opacity-40 rounded-[70px] text-[#596780] max-md:max-w-full ">
-    <div className="flex gap-5">
-      <Icon
-        src="/icons/search-normal.png"
-        alt="Search icon"
-        className="w-6"
-      />
-      <label htmlFor="searchInput" className="sr-only">
-        Search something here
-      </label>
-      <input
-        id="searchInput"
-        type="text"
-        className="bg-transparent border-none outline-none basis-auto"
-        placeholder="Search something here"
-        onChange={(e) => onSearch?.(e.target.value)}
-      />
-    </div>
-    <Icon
-      src="/icons/filter.png"
-      alt="Filter icon"
-      className="w-6"
-    />
-  </div>
-);
-
-const NavigationIcons: React.FC<NavigationIconsProps> = ({ icons }) => (
-  <div className="flex gap-5 items-start">
-    {icons.map((icon, index) => (
-      <Icon key={index} {...icon} />
-    ))}
-  </div>
-);
-
-const Navbar: React.FC = () => {
-  const navigationIcons = [
-    {
-      src: "/icons/Like.png",
-      alt: "Navigation icon 1",
-      className: "w-11 rounded-none",
-    },
-    {
-      src: "/icons/Notification.png",
-      alt: "Navigation icon 2",
-      className: "w-11 rounded-none",
-    },
-    {
-      src: "/icons/Settings.png",
-      alt: "Navigation icon 3",
-      className: "w-11 rounded-none",
-    },
-    {
-      src: "/icons/profile.png",
-      alt: "Profile icon",
-      className: "w-11 rounded-[90px]",
-    },
-  ];
-
+const Navbar = () => {
   return (
-    <div className="flex overflow-hidden flex-wrap gap-10 px-12 py-10 bg-white border border-solid border-slate-300 border-opacity-40 max-md:px-5">
-      <div className="flex flex-wrap gap-10 max-md:max-w-full">
-        <div className="my-auto text-3xl font-bold tracking-tighter text-[#3563E9] basis-auto">
-          MORENT
+    <div className="w-full h-auto bg-white border-t border-b border-solid border-[#C3D4E966] flex flex-col md:flex-row items-center px-4 md:px-10 md:h-[124px]">
+      
+      <div className="flex justify-between items-center w-full md:w-auto md:flex-row md:gap-[191px] mt-4 md:mt-0">
+    
+        <div className="flex items-center gap-2">
+          <p className="font-bold text-[24px] md:text-[32px] leading-[28.8px] md:leading-[48px] text-[#3563E9]">
+            MORENT
+          </p>
         </div>
-        <SearchBar />
+    
+        <div className="ml-auto md:ml-0">
+          <img
+            src="/icons/profile.png"
+            alt="Profile Icon"
+            className="w-[28px] h-[28px] md:hidden rounded-full"
+          />
+        </div>
       </div>
-      <div className="flex-grow"></div>
-      <NavigationIcons icons={navigationIcons} />
+
+      
+      <div className="relative w-[263px] md:w-[492px] h-[48px] bg-white border border-[#C3D4E966] rounded-lg mt-4 md:mt-0 md:mx-16 flex items-center">
+   
+        <input
+          type="text"
+          placeholder="Search something here"
+          className="w-full h-full pl-10 pr-12 text-[14px] font-medium text-[#596780] bg-white focus:outline-none rounded-lg"
+        />
+  
+        <div className="absolute left-[12px] top-[50%] transform -translate-y-1/2">
+          <img
+            src="/icons/search-normal.png"
+            alt="Search Icon"
+            className="w-[24px] h-[24px]"
+          />
+        </div>
+       
+        <div className="absolute right-[12px] top-[50%] transform -translate-y-1/2">
+          <img
+            src="/icons/filter.png"
+            alt="Filter Icon"
+            className="w-[24px] h-[24px]"
+          />
+        </div>
+      </div>
+
+      <div className="hidden md:flex items-center space-x-5 ml-auto">
+        <img
+          src="/icons/Like.png"
+          alt="Like Icon"
+          className="w-[44px] h-[44px] border border-[#C3D4E966] rounded-full"
+        />
+        <img
+          src="/icons/Notification.png"
+          alt="Notification Icon"
+          className="w-[44px] h-[44px] border border-[#C3D4E966] rounded-full"
+        />
+        <img
+          src="/icons/Settings.png"
+          alt="Settings Icon"
+          className="w-[44px] h-[44px] border border-[#C3D4E966] rounded-full"
+        />
+         <img
+            src="/icons/profile.png"
+           alt="Icon 4"
+           className="w-[44px] h-[44px] border border-[#C3D4E966] rounded-full"
+        />
+      </div>
     </div>
   );
 };
