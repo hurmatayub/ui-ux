@@ -7,33 +7,12 @@ import { LuArrowDownUp } from "react-icons/lu";
 
 const Header = () => {
     return (
-        <div className=' bg-contentBg w-[100%] h-fit '>
-            {/* Ads section  */}
-            <div className='w-[100%]  flex justify-center gap-5 items-center  p-5  '>
-                {/* Ads1  */}
-                <div className='w-[640px] h-[360px]  bg-Ads1 rounded-[15px]'>
-                    <div className=' w-[284px] h-[224px] m-7 text-white ' >
-                        <h1 className='text-[24px] '>The Best Platform for Car Rental</h1>
-                        <p className='font-serif'>Ease of doing a car rental safely and reliably. Of course at a low price.</p>
-                        <button className='w-[120px] h-[44px] bg-primary500 rounded-[10px] mt-5'>Rental Car</button>
-                        <img src="/images/carImg.png" alt="" className='ml-32 mt-8 ' />
-                    </div>
-                </div>
-                {/* Ads2  */}
-                <div className='w-[640px] h-[360px] bg-primary500 rounded-[15px] '>
-                    <div className=' w-[284px] h-[224px] m-5 text-white '>
-                        <h1 className='text-[24px] '>Easy way to rent a car at a low price</h1>
-                        <p>Providing cheap car rental services and safe and comfortable facilities.</p>
-                        <button className='w-[120px] h-[44px]  bg-Ads1 rounded-[10px] mt-5'>Rental Car</button>
-                        <img src="/images/carImg.png" alt="" className='ml-32 mt-8 ' />
-                    </div>
+        <div className='bg-[#F6F7F9]  w-[100%] h-fit '>
+         
 
-                </div>
-            </div>
-            {/* 2nd section  */}
 
             <div className="w-[100%] h-fit flex justify-around items-center p-2 bg-contentBg">
-                {/* pic up  */}
+             
                 <div className="w-[582px] h-[132px]   bg-white rounded-[10px]">
                     <div className="w-[92px] h-[20px]  m-5 flex justify-start items-center"><BiRadioCircleMarked className='text-blue-800 text-[25px] shadow-sm' /><p>Pick-Up</p></div>
                     <div className='w-[486px] h-[48px]  m-5 flex justify-between items-center'>
@@ -50,9 +29,9 @@ const Header = () => {
                     </div>
 
                 </div>
-                {/* center div  */}
+            
                 <div className="w-[60px] h-[60px] bg-primary500 rounded-[10px]"><LuArrowDownUp className='text-white m-auto mt-[20%] text-[40px] ' /></div>
-                {/* right div  */}
+               
                 <div className="w-[582px] h-[132px]  bg-white rounded-[10px]">
                     <div className="w-[92px] h-[20px] m-5 flex justify-start items-center"><BiRadioCircleMarked className='text-blue-800 text-[25px] shadow-sm' /><p>Drop-Off</p></div>
                     <div className='w-[486px] h-[48px] m-5 flex justify-between items-center'>
@@ -76,3 +55,109 @@ const Header = () => {
     )
 }
 export default  Header
+
+
+// export default function Header() {
+//     return (
+//       <div className="flex flex-col items-center gap-4">
+//         {/* Div1 */}
+//         <div className="w-[582px] h-[136px] bg-white rounded-[10px] rounded-tr-none"></div>
+  
+//         {/* Div2 */}
+//         <div className="w-[582px] h-[132px] relative top-[424px] left-[64px] bg-white rounded-tl-[10px] rounded-tr-none"></div>
+  
+//         {/* Pickup Section */}
+//         <div className="w-[486px] h-[48px] relative top-[60px] left-[48px] flex gap-6 items-center">
+//           {/* Image Div */}
+//           <div className="w-[16px] h-[16px] rounded-tl-[70px] bg-gray-300 flex-shrink-0">
+//             <img src="/icons/mark.png" alt="" className="w-[16px]" />
+//           </div>
+  
+//           {/* Pickup */}
+//           <div className="w-[126px] h-[48px] flex flex-col gap-2">
+//             <p className="text-[16px] font-semibold leading-[24px] text-[#1A202C]">Pick - Up</p>
+//           </div>
+  
+//           {/* Locations */}
+//           <div className="w-[126px] h-[48px] flex flex-col gap-2">
+//             <p className="text-[16px] font-bold leading-[24px] text-[#1A202C]">Locations</p>
+//             <div className="flex items-center gap-2">
+//               <p className="text-[12px] font-medium leading-[15.12px] text-[#90A3BF]">Select your city</p>
+//               <img src="/icons/Arrow-down.png" alt="arrow" className="w-[14px] h-[14px]" />
+//             </div>
+//           </div>
+  
+//           {/* Date */}
+//           <div className="w-[134px] h-[48px] flex flex-col gap-2">
+//             <p className="text-[16px] font-bold leading-[24px] text-[#1A202C]">Date</p>
+//             <div className="flex items-center gap-2">
+//               <p className="text-[12px] font-medium leading-[15.12px] text-[#90A3BF]">Select your date</p>
+//               <img src="/icos/Arrow-down.png" alt="arrow" className="w-[14px] h-[14px]" />
+//             </div>
+//           </div>
+  
+//           {/* Time */}
+//           <div className="w-[130px] h-[48px] flex flex-col gap-2">
+//             <p className="text-[16px] font-bold leading-[24px] text-[#1A202C]">Time</p>
+//             <div className="flex items-center gap-2">
+//               <p className="text-[12px] font-medium leading-[15.12px] text-[#90A3BF]">Select your time</p>
+//               <img src="/icos/Arrow-down.png" alt="arrow" className="w-[14px] h-[14px]" />
+//             </div>
+//           </div>
+//         </div>
+
+//     <div className="flex flex-col space-y-4">
+//       {/* Div 1 */}
+//       <div className="w-[582px] h-[136px] bg-white rounded-t-lg"></div>
+
+//       {/* Div 2 */}
+//       <div className="w-[582px] h-[132px] bg-white relative top-[424px] left-[794px] rounded-t-lg"></div>
+
+//       {/* Drop-Off Section */}
+//       <div className="flex flex-col w-[582px] p-6 bg-gray-800 text-white rounded-lg space-y-6">
+//         <div className="flex items-center space-x-2">
+//           <div className="w-[16px] h-[16px] rounded-t-lg bg-white"></div>
+//           <p className="text-lg font-semibold leading-6">Drop - Off</p>
+//         </div>
+//         <div className="flex flex-col space-y-4">
+//           {/* Locations */}
+//           <div className="flex items-center justify-between">
+//             <div className="flex flex-col">
+//               <p className="text-lg font-bold">Locations</p>
+//               <p className="text-sm font-medium text-gray-500">Select your city</p>
+//             </div>
+//             <div className="w-[14px] h-[14px] bg-gray-300"></div>
+//           </div>
+//           <div className="w-[48px] h-0 border-t border-gray-300 opacity-50"></div>
+
+//           {/* Date */}
+//           <div className="flex items-center justify-between">
+//             <div className="flex flex-col">
+//               <p className="text-lg font-bold">Date</p>
+//               <p className="text-sm font-medium text-gray-500">Select your date</p>
+//             </div>
+//             <div className="w-[14px] h-[14px] bg-gray-300"></div>
+//           </div>
+//           <div className="w-[48px] h-0 border-t border-gray-300 opacity-50"></div>
+
+//           {/* Time */}
+//           <div className="flex items-center justify-between">
+//             <div className="flex flex-col">
+//               <p className="text-lg font-bold">Time</p>
+//               <p className="text-sm font-medium text-gray-500">Select your time</p>
+//             </div>
+//             <div className="w-[14px] h-[14px] bg-gray-300"></div>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+
+        
+
+
+
+//       </div>
+//     );
+//   }
+  
+  
