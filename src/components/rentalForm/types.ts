@@ -20,13 +20,3 @@ export interface PaymentMethodProps {
 export interface CheckboxProps {
   text: string;
 }
-
-export interface RentalSummaryProps {
-  carName: string;
-  carImage: string;
-  rating: number;
-  reviews: number;
-  subtotal: number;
-  tax: number;
-  total: number;
-}

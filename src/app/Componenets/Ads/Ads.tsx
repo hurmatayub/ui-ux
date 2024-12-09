@@ -1,3 +1,4 @@
+import Header from "../Header/Header";
 
 
 const Ads = () => {
@@ -51,7 +52,9 @@ const Ads = () => {
             <img src="/images/carImg2.png" alt="" className="ml-32  " />
           </div>
         </div>
+       
       </div>
+      <Header />
     </>
   );
 };

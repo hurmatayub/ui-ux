@@ -17,7 +17,7 @@ export const StepHeader: React.FC<StepHeaderProps> = ({
         </p>
       </div>
       <div className="self-end mt-8 text-sm font-medium tracking-tight text-right text-slate-400">
-        {step}
+        Step {step} of 4
       </div>
     </div>
   );
