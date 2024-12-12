@@ -2,7 +2,7 @@ import React from 'react';
 
 const RecentTransaction = () => {
   return (
-    <div className="absolute w-[524px] h-[480px] top-[388px] left-[884px] p-[24px] rounded-[10px]  bg-white">
+    <div className="absolute w-[524px] h-[490px] top-[388px] mt-4 left-[884px] p-[24px] rounded-[10px]  bg-white">
       <div className="absolute w-[476px] h-[24px] top-[24px] left-[24px] flex justify-between items-center">
         <p className="font-bold text-[20px] leading-[30px] text-[#1A202C]">
           Recent Transaction
@@ -35,6 +35,7 @@ const RecentTransaction = () => {
       </p>
     </div>
   </div>
+  <div className="w-[476px] h-[0px] border-t border-[#C3D4E966]"></div>
 
   <div className="flex w-[476px] h-[70px] items-center">
     <div className="w-[132px] h-[70px] p-[17px_9px] rounded-[8px]">
@@ -57,6 +58,7 @@ const RecentTransaction = () => {
       </p>
     </div>
   </div>
+  <div className="w-[476px] h-[0px] border-t border-[#C3D4E966]"></div>
 
   <div className="flex w-[476px] h-[70px] items-center">
     <div className="w-[132px] h-[70px] p-[17px_9px] rounded-[8px]">
@@ -79,6 +81,7 @@ const RecentTransaction = () => {
       </p>
     </div>
   </div>
+  <div className="w-[476px] h-[0px] border-t border-[#C3D4E966]"></div>
 
   <div className="flex w-[476px] h-[70px] items-center">
     <div className="w-[132px] h-[70px] p-[17px_9px] rounded-[8px]">

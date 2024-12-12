@@ -13,7 +13,7 @@ const socialLinks = ["Discord", "Instagram", "Twitter", "Facebook"];
 
 export const Footer: React.FC = () => {
   return (
-    <div className="flex overflow-hidden flex-col px-16 py-16 bg-white max-md:px-5">
+    <div className="flex overflow-hidden flex-col px-16 py-16 mx-12 bg-white max-md:px-5">
       <div className="flex flex-wrap gap-10 items-start w-full max-w-[1244px] max-md:max-w-full">
         <div className="flex flex-col">
           <div className="text-3xl font-bold tracking-tighter text-blue-600">

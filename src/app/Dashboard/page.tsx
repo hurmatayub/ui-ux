@@ -2,13 +2,18 @@ import Image from 'next/image';
 import DashboardRental from './dashoardRental';
 import TopCars from './TopCarrs';
 import RecentTransaction from './RecantTransiction';
+import Navbar from '../Componenets/Navbarr/Navbar';
+
 
 export default function Dashboard(){
   return (
-    <div className="w-full h-[900px] top-[124px] bg-[#F6F7F9] relative">
-    <div className="w-[286px] h-[900px] bg-[#FFFFFF] border-r border-[#F3F5F7]">
+    <>
+    <Navbar />
+    <div className="w-full h-[900px]  bg-[#F6F7F9] relative">
+      
+    <div className="w-[286px] h-[900px]  bg-[#FFFFFF] border border-[#F3F5F7]">
      
-      <div className="w-full h-auto gap-0 border-b  border-[#F3F5F7] py-4">
+      <div className="w-full h-auto border-b  border-[#F3F5F7] py-4">
         <div className="pl-4">
           <p className="text-[#94A7CB66] font-semibold text-xs">M A I N  M E N U</p>
         </div>
@@ -74,12 +79,12 @@ export default function Dashboard(){
               <Image src="/icons/briefcase.png" alt="Dark Mode" width={24} height={24} />
             </div>
             <p className="text-[#90A3BF] font-medium text-base">Dark Mode</p>
+            <img src='/icons/toggle.png' />
           </div>
+         
         </div>
       </div>
-
-      
-      <div className="w-full h-auto gap-0 py-4">
+      <div className="w-full h-auto py-4">
         <div className="flex items-center gap-3 pl-4 py-2 ">
           <div className="w-[24px] h-[24px]">
             <Image src="/icons/logout.png" alt="Log Out" width={24} height={24} />
@@ -92,6 +97,7 @@ export default function Dashboard(){
       <RecentTransaction />
     </div>
     </div>
+    </>
   );
 };
 

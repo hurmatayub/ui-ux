@@ -1,3 +1,5 @@
+import { Footer } from "../Componenets/Footer/footer/Footer";
+import Navbar from "../Componenets/Navbarr/Navbar";
 
 export default function() {
   return (
@@ -32,7 +34,7 @@ export default function() {
       <div className="flex items-center gap-2">
         <div className="flex gap-1">
      
-          <span className="w-[20px] h-[20px] bg-[#596780] inline-block"></span>
+          <img src="/icons/Review Star.png" />
         </div>
         <p className="text-[14px] font-medium text-[#596780]">440+ Reviews</p>
       </div>
@@ -73,7 +75,7 @@ export default function() {
     <p className="text-[32px] font-bold leading-[40px] text-[#1A202C]">$80.00</p>
   </div>
 </div>
-
+  <Footer />
     </>
   )
 }

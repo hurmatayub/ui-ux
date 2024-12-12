@@ -1,9 +1,15 @@
-import Header from "../Header/Header";
+import { CarCard } from "@/app/PopularCars/CarCards";
+import { Footer } from "../Footer/footer/Footer";
+import Navbar from "../Navbarr/Navbar";
+import Header from "./Header";
+import { SectionHeader } from "@/app/PopularCars/SectionHeader";
+import { PopularCar } from "@/app/PopularCars/PopularCar";
 
 
 const Ads = () => {
   return (
     <>
+    <Navbar />
       <div className="w-full h-auto bg-[#F6F7F9] py-10 flex justify-center gap-8">
         
         <div className="w-[640px] h-[360px] bg-[#54A6FF] rounded-[10px] flex flex-col p-6">
@@ -52,9 +58,10 @@ const Ads = () => {
             <img src="/images/carImg2.png" alt="" className="ml-32  " />
           </div>
         </div>
-       
       </div>
       <Header />
+      <PopularCar />
+      <Footer />
     </>
   );
 };

@@ -1,19 +1,31 @@
 // import { Footer } from "./Componenets/Footer/footer/Footer";
 // import Navbar from "./Componenets/Navbarr/Navbar";
-// import Ads from "./Componenets/Ads/Ads";
-// import Form from "@/app/Form/page"
+// import Category1 from "./Catogory/category1";
+import Navbar from "./Catogory/Navbar";
+import Ads from "./Componenets/Ads/Ads";
+import Form from "@/app/Form/page"
 
-import Dashboard from "./Dashboard/page";
+
+
+
+// import Navbar from "./Catogory/navbar";
+
+// import Header from "./Componenets/Header/Header";
+// import Dashboard from "./Dashboard/page";
 
 
 
 export default function Home() {
   return (
     <div>
-      {/* <Navbar />
-      <Ads /> */}
+      {/* <Navbar /> */}
+      {/* <Ads /> */}
+      {/* <Category1 /> */}
+      {/* <Header /> */}
+      <Navbar />
       {/* <Form /> */}
-      <Dashboard />
+      {/* <Navbar /> */}
+      {/* <Dashboard /> */}
       {/* <Footer /> */}
     
     </div>

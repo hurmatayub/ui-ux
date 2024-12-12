@@ -50,18 +50,22 @@ const DashboardRental = () => {
         <div className="flex flex-col items-start gap-2">
           <p className="font-bold text-[16px] text-[#1A202C]">Locations</p>
           <p className="font-medium text-[12px] text-[#90A3BF]">Kota Semarang</p>
+          <img src='/icons/Arrow-Down.png' />
         </div>
         <div className="w-[48px] h-[0px] border-[1px] border-solid border-[#C3D4E9] mt-4 rotate-[270deg]"></div>
 
         <div className="flex flex-col items-start gap-2">
           <p className="font-bold text-[16px] text-[#1A202C]">Date</p>
           <p className="font-medium text-[12px] text-[#90A3BF]">20 July 2022</p>
+          <img src='/icons/Arrow-Down.png' />
+          
         </div>
         <div className="w-[48px] h-[0px] border-[1px] border-solid border-[#C3D4E9]  mt-4 rotate-[270deg]"></div>
 
         <div className="flex flex-col items-start gap-2">
           <p className="font-bold text-[16px] text-[#1A202C]">Time</p>
           <p className="font-medium text-[12px] text-[#90A3BF]">07:00</p>
+          <img src='/icons/Arrow-Down.png' />
         </div>
       </div>
 
@@ -79,18 +83,21 @@ const DashboardRental = () => {
         <div className="flex flex-col items-start gap-2">
           <p className="font-bold text-[16px] text-[#1A202C]">Locations</p>
           <p className="font-medium text-[12px] text-[#90A3BF]">Kota Jakarta</p>
+          <img src='/icons/Arrow-Down.png' />
         </div>
         <div className="w-[48px] h-[0px] border-[1px] border-solid border-[#C3D4E9] mt-4 rotate-[270deg]"></div>
 
         <div className="flex flex-col items-start gap-2">
           <p className="font-bold text-[16px] text-[#1A202C]">Date</p>
-          <p className="font-medium text-[12px] text-[#90A3BF]">25 July 2022</p>
+          <p className="font-medium text-[12px] text-[#90A3BF]">21 July 2022</p>
+          <img src='/icons/Arrow-Down.png' />
         </div>
         <div className="w-[48px] h-[0px] border-[1px] border-solid border-[#C3D4E9] mt-4 rotate-[270deg]"></div>
 
         <div className="flex flex-col items-start gap-2">
           <p className="font-bold text-[16px] text-[#1A202C]">Time</p>
-          <p className="font-medium text-[12px] text-[#90A3BF]">12:00</p>
+          <p className="font-medium text-[12px] text-[#90A3BF]">01.00</p>
+          <img src='/icons/Arrow-Down.png' />
         </div>
       </div>
 
@@ -117,3 +124,4 @@ const DashboardRental = () => {
 };
 
 export default DashboardRental;
+
