@@ -1,28 +1,28 @@
 export default function Confirmation() {
     return(
-        <div className="w-[852px] h-[664px] rounded-[10px] bg-[#FFFFFF] mx-7 mt-7">
+        // <div className="w-[852px] h-[664px] rounded-[10px] bg-[#FFFFFF] mx-7 mt-7">
         
-        <div className="w-[852px] h-[484px] bg-white rounded-tl-lg p-6">
+        // <div className="w-[852px] h-[484px] bg-white rounded-tl-lg p-6">
           
-          <div className="flex justify-between items-start gap-4 mb-6">
+        //   <div className="flex justify-between items-start gap-4 mb-6">
             
-            <div className="w-[436px]">
-              <p className="text-[20px] font-bold text-[#1A202C] leading-[30px]">
-                Confirmation
-              </p>
-              <p className="text-[14px] font-medium text-[#90A3BF] leading-[21px] mt-2">
-                We are getting to the end. Just a few clicks and your rental is ready!
-              </p>
-            </div>
+        //     <div className="w-[436px]">
+        //       <p className="text-[20px] font-bold text-[#1A202C] leading-[30px]">
+        //         Confirmation
+        //       </p>
+        //       <p className="text-[14px] font-medium text-[#90A3BF] leading-[21px] mt-2">
+        //         We are getting to the end. Just a few clicks and your rental is ready!
+        //       </p>
+        //     </div>
             
-            <div className="w-[72px] text-right mt-12">
-              <p className="text-[14px] font-medium text-[#90A3BF] leading-[21px]">
-                Step 4 of 4
-              </p>
-            </div>
-          </div>
+        //     <div className="w-[72px] text-right mt-12">
+        //       <p className="text-[14px] font-medium text-[#90A3BF] leading-[21px]">
+        //         Step 4 of 4
+        //       </p>
+        //     </div>
+        //   </div>
 
-        
+        <>
           <div className="w-[804px] gap-[24px] mb-6 ">
           
             <div className="flex items-center h-[56px] mb-4 pl-6 bg-[#F6F7F9] rounded-[10px]">
@@ -65,8 +65,9 @@ export default function Confirmation() {
               experience ever.
             </p>
           </div>
-        </div>
-        </div>
+        {/* </div>
+        </div> */}
+        </>
 
 
     )

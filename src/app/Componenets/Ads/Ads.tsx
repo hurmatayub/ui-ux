@@ -3,6 +3,7 @@ import { Footer } from "../Footer/footer/Footer";
 import Navbar from "../Navbarr/Navbar";
 import Header from "./Header";
 import { SectionHeader } from "@/app/PopularCars/SectionHeader";
+
 import { PopularCar } from "@/app/PopularCars/PopularCar";
 
 

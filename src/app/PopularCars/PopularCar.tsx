@@ -134,7 +134,7 @@ const recommendedCars = [
 
 export const PopularCar: React.FC = () => {
   return (
-    <main className="flex flex-col" role="main">
+<main className="flex flex-col bg-[#F6F7F9] w-full min-h-screen  mt-10 mb-30 gap-[32px] " role="main">
       <section className="flex flex-col max-md:max-w-full" aria-label="Popular Cars">
         <SectionHeader title="Popular Car" showViewAll={true} />
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  items-start mt-5 max-md:max-w-full">
@@ -159,6 +159,20 @@ export const PopularCar: React.FC = () => {
           </div>
         </div>
       </section>
+      <div className="w-[734px] h-[44px] mt-[20px] ml-[800px] gap-[438px] flex items-center">
+  <div className="w-[156px] h-[44px] px-[20px] bg-[#3563E9] rounded-tl-[4px] flex items-center justify-center gap-[8px]">
+    <div className="w-[116px] h-[24px] text-white flex items-center justify-center">
+      <p className="font-['Plus Jakarta Sans'] text-[16px] font-semibold leading-[24px] tracking-[-0.02em] text-center">
+        Show more car
+      </p>
+    </div>
+  </div>
+  <div className="w-[140px] h-[24px]  text-[#90A3BF] flex items-center justify-end">
+    <p className="font-['Plus Jakarta Sans'] text-[14px] font-medium leading-[21px] tracking-[-0.02em] text-right">
+      120 Car
+    </p>
+  </div>
+</div>
     </main>
   );
 };

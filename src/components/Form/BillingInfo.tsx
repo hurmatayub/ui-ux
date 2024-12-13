@@ -39,7 +39,6 @@ export default function BillingInfo() {
         <div className="px-[24px] pt-[32px] space-y-[40px] ">
           <LocationSection title="Pick-Up" />
           <LocationSection title="Drop-Off" />
-          <Confirmation />
         </div>
       </div>
     </div>
