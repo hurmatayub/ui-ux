@@ -1,13 +1,15 @@
 import React from 'react';
-import Header from '../Componenets/Ads/Header';
-import Category1 from './Category1';
+import { Category1 } from './Category1';
+import Navbar from '../Componenets/Navbarr/Navbar';
 
-export default function Navbar() {
+
+export default function page() {
   return (
-    <div className="flex">
-      <div className="w-full h-[1600px] bg-[#F6F7F9] relative top-[124px] flex">
+    <div>
+      <Navbar />
+      <div className="w-full h-[1600px] relative bg-[#F6F7F9] flex">
       
-        <div className="w-[360px] h-[1600px] p-8 border-r border-[#F3F5F7] bg-[#FFFFFF]">
+        <div className="w-[360px] h-[1600px] p-8 border border-[#F3F5F7] bg-[#FFFFFF]">
         
           <div className="space-y-7">
             <div>
@@ -60,7 +62,7 @@ export default function Navbar() {
             <div className="space-y-8">
               <div className="flex gap-8">
                 <div className="w-[24px] h-[24px] ">
-                <img src='/icons/tick-square.png' />
+                <img src='/icons/tick-square.png'/>
                 </div>
                 <p className="w-[144px] h-[24px] font-[600] text-[20px] leading-[30px] tracking-[-0.02em] text-justify">2 Person <span className='text-[#90A3BF]'>(10)</span></p>
               </div>

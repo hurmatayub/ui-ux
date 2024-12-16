@@ -1,10 +1,12 @@
 import React from "react";
 import CarSummary from "./carSummary";
+import Navbar from "../Componenets/Navbarr/Navbar";
 
 export default function BillingInfo() {
   return (
-   
-    <div className="w-full h-[2240px] mt-[124px] pt-[32px] bg-[#F6F7F9]">
+    <>
+    <div className="w-full h-[2260px] mt-[124px] pt-[32px] bg-[#F6F7F9]">
+      <Navbar />
       {/* billing Info */}
       <div className="w-[852px] h-[336px] bg-[#FFFFFF] rounded-[10px] mx-7 ">
         <div className="flex justify-between items-center px-[24px] pt-[24px]">
@@ -385,6 +387,7 @@ export default function BillingInfo() {
       </div>
       <CarSummary />
     </div>
+    </>
   );
 }
 

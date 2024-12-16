@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Navbar = () => {
   return (
     <div className="w-full h-auto bg-white border-t border-b border-solid border-[#C3D4E966] flex flex-col md:flex-row items-center px-4 md:px-10 md:h-[124px]">
@@ -61,11 +63,13 @@ const Navbar = () => {
           alt="Settings Icon"
           className="w-[44px] h-[44px] border border-[#C3D4E966] rounded-full"
         />
+        <Link href="/Dashboard">
          <img
             src="/icons/profile.png"
            alt="Icon 4"
            className="w-[44px] h-[44px] border border-[#C3D4E966] rounded-full"
         />
+        </Link>
       </div>
     </div>
   );

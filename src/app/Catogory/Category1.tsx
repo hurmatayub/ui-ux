@@ -1,6 +1,10 @@
-import React from 'react';
+import * as React from "react";
+import { CarCard } from "./CarCard";
+import Link from "next/link";
+import { SectionHeader } from "./SectionHeader";
+import Header from "../Componenets/Ads/Header";
 
-const carData = [
+const PopularCars = [
   {
     name: "Koenigsegg",
     type: "Sport",
@@ -9,7 +13,7 @@ const carData = [
     transmission: "Manual",
     capacity: "2 People",
     price: 99,
-    liked: true
+    liked: true,
   },
   {
     name: "Nissan GT - R",
@@ -20,7 +24,7 @@ const carData = [
     capacity: "2 People",
     price: 80,
     originalPrice: 100,
-    liked: false
+    liked: false,
   },
   {
     name: "Rolls - Royce",
@@ -30,68 +34,109 @@ const carData = [
     transmission: "Manual",
     capacity: "4 People",
     price: 96,
-    liked: true
+    liked: false,
   },
   {
-    name: "Nissan GT - R",
-    type: "Sport",
-    image: "/images/car4.png",
+    name: "All New Rush",
+    type: "SUV",
+    image: "/images/car5.png",
+    fuelCapacity: "70L",
+    transmission: "Manual",
+    capacity: "6 People",
+    price: 72,
+    originalPrice: 80,
+    liked: false,
+  },
+  {
+    name: "CR - V",
+    type: "SUV",
+    image: "/images/car6.png",
     fuelCapacity: "80L",
     transmission: "Manual",
-    capacity: "2 People",
+    capacity: "6 People",
     price: 80,
-    originalPrice: 100,
-    liked: false
-  }
+    liked: true,
+  },
+  {
+    name: "All New Terios",
+    type: "SUV",
+    image: "/images/car7.png",
+    fuelCapacity: "90L",
+    transmission: "Manual",
+    capacity: "6 People",
+    price: 74,
+    liked: false,
+  },
+  {
+    name: "MG ZX Exclusive",
+    type: "Hatchback",
+    image: "/images/car9.png",
+    fuelCapacity: "70L",
+    transmission: "Manual",
+    capacity: "4 People",
+    price: 76,
+    originalPrice: 80,
+    liked: false,
+  },
+  {
+    name: "New MG ZS",
+    type: "SUV",
+    image: "/images/car10.png",
+    fuelCapacity: "80L",
+    transmission: "Manual",
+    capacity: "6 People",
+    price: 80,
+    liked: false,
+  },
+  {
+    name: "MG ZX Excite",
+    type: "Hatchback",
+    image: "/images/car9.png",
+    fuelCapacity: "90L",
+    transmission: "Manual",
+    capacity: "4 People",
+    price: 74,
+    liked: true,
+  },
 ];
 
-const Category1 = () => {
+export const Category1: React.FC = () => {
   return (
-    <div className="absolute top-[200px] left-[392px] w-[1015px] h-auto flex flex-wrap gap-8">
-     
-      {carData.map((car, index) => (
-        <div
-          key={index}
-          className="w-[317px] h-[388px] rounded-tl-[10px] bg-white shadow-md flex flex-col items-center justify-between p-4"
+    <>
+      <Header />
+      <main
+        className="flex flex-col bg-[#F6F7F9] w-full min-h-screen mt-10 mb-30 gap-[32px] overflow-x-hidden"
+        role="main"
+      >
+        <section
+          className="flex flex-col max-w-[1200px] mx-auto"
+          aria-label="Popular Cars"
         >
-          <img src={car.image} alt={car.name} className="w-full h-[200px] object-cover rounded" />
-          <div className="w-full text-center">
-            <p className="text-[16px] font-bold text-[#1A202C]">{car.name}</p>
-            <p className="text-[14px] text-[#90A3BF]">{car.type}</p>
+          <SectionHeader title="Popular Cars" showViewAll={true} />
+          <div
+            className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-10 mt-5"
+          >
+            {PopularCars.map((car, index) => (
+              <CarCard key={`popular-${index}`} {...car} />
+            ))}
           </div>
-          <div className="w-full flex justify-between text-[12px] text-[#90A3BF]">
-            <p>Fuel: {car.fuelCapacity}</p>
-            <p>Transmission: {car.transmission}</p>
-            <p>Capacity: {car.capacity}</p>
+        </section>
+
+        <div className="flex items-center justify-between max-w-[1200px] mx-auto mt-[20px] px-4">
+          <div className="w-[156px] h-[44px] px-[20px] bg-[#3563E9] rounded-[4px] flex items-center justify-center gap-[8px]">
+            <Link href="/Catogory">
+              <p className="font-['Plus Jakarta Sans'] text-[16px] font-semibold leading-[24px] tracking-[-0.02em] text-white text-center">
+                Show more cars
+              </p>
+            </Link>
           </div>
-          <div className="w-full flex justify-between items-center">
-            <p className="text-[20px] font-bold text-[#1A202C]">
-              ${car.price}
+          <div className="text-[#90A3BF]">
+            <p className="font-['Plus Jakarta Sans'] text-[14px] font-medium leading-[21px] tracking-[-0.02em]">
+              120 Cars
             </p>
-            {car.originalPrice && (
-              <p className="text-[14px] text-[#FF0000] line-through">${car.originalPrice}</p>
-            )}
           </div>
         </div>
-      ))}
-
-  
-      <div className="absolute top-[1492px] left-[822px] w-[586px] flex items-center justify-between gap-[290px]">
-        <button className="w-[156px] h-[44px] rounded-tl-[4px] bg-[#3563E9] text-white font-semibold">
-          Previous
-        </button>
-        <button className="w-[156px] h-[44px] rounded-tl-[4px] bg-[#3563E9] text-white font-semibold">
-          Next
-        </button>
-      </div>
-
-      <div className="absolute top-[1400px] left-[822px] w-[140px] h-[24px] flex items-center">
-        <p className="text-[14px] font-medium text-[#90A3BF] text-right">
-          120 Car
-        </p>
-      </div>
-    </div>
+      </main>
+    </>
   );
 };
-
-export default Category1;
