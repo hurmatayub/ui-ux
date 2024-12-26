@@ -10,14 +10,14 @@ export default function Dashboard(){
     <>
       <Navbar />
       <div className="w-full h-[900px] bg-[#F6F7F9] relative">
-        {/* Sidebar */}
-        <div className="hidden md:block w-[286px] h-[900px] bg-[#FFFFFF] border border-[#F3F5F7]">
+       
+        <div className="hidden md:block w-[286px] h-[895px] bg-[#FFFFFF] border border-[#F3F5F7]">
           <div className="w-full h-auto border-b border-[#F3F5F7] py-4">
             <div className="pl-4">
               <p className="text-[#94A7CB66] font-semibold text-xs">M A I N  M E N U</p>
             </div>
             <div className="space-y-4 mt-6">
-              <div className="flex items-center gap-3 pl-4 py-2 rounded-lg bg-[#3563E9]">
+              <div className="flex items-center gap-3 pl-2 py-4 mx-3 rounded-[10px] bg-[#3563E9]">
                 <div className="w-[24px] h-[24px]">
                   <Image src="/icons/home.png" alt="Dashboard" width={24} height={24} />
                 </div>
@@ -55,7 +55,7 @@ export default function Dashboard(){
               </div>
             </div>
           </div>
-          <div className="w-full h-auto gap-0 border-b border-[#F3F5F7] py-4">
+          <div className="w-full h-auto gap-0 border-b border-[#F3F5F7] py-4 mt-9">
             <div className="pl-4">
               <p className="text-[#94A7CB66] font-semibold text-xs">P R E F E R E N C E S</p>
             </div>
@@ -77,11 +77,11 @@ export default function Dashboard(){
                   <Image src="/icons/briefcase.png" alt="Dark Mode" width={24} height={24} />
                 </div>
                 <p className="text-[#90A3BF] font-medium text-base">Dark Mode</p>
-                <img src="/icons/toggle.png" />
+                <Image src="/icons/toggle.png" alt='' />
               </div>
             </div>
           </div>
-          <div className="w-full h-auto py-4">
+          <div className="w-full h-auto py-4 mt-20">
             <div className="flex items-center gap-3 pl-4 py-2 ">
               <div className="w-[24px] h-[24px]">
                 <Image src="/icons/logout.png" alt="Log Out" width={24} height={24} />
@@ -91,7 +91,6 @@ export default function Dashboard(){
           </div>
         </div>
 
-        {/* Main Content */}
         <div className="flex-1">
           <DashboardRental />
           <TopCars />

@@ -1,7 +1,8 @@
 import * as React from "react";
 import { CarCardProps } from "./types";
 import Link from "next/link";
-import Navbar from "../Componenets/Navbarr/Navbar";
+import Image from "next/image";
+
 
 export const CarCard: React.FC<CarCardProps> = ({
   name,
@@ -15,7 +16,7 @@ export const CarCard: React.FC<CarCardProps> = ({
   liked,
 }) => {
   return (
-    <div className="flex flex-wrap gap-[32px] w-[1312px] h-auto">
+    <div className=" flex flex-wrap gap-[32px] w-[1312px] h-auto">
       <div className="w-[304px] h-[388px] bg-[#FFFFFF] rounded-[10px]">
         <div className="flex gap-5 justify-between font-bold">
           <div className=" mt-[24px] ml-[24px] gap-[4px]  flex flex-col">
@@ -26,14 +27,14 @@ export const CarCard: React.FC<CarCardProps> = ({
               {type}
             </div>
           </div>
-          <img
+          <Image
             loading="lazy"
             src={liked ? "/icons/Heart.png" : "/icons/disLike.png"}
             className="object-contain shrink-0 self-start w-6 mt-[24px] mr-[20px] aspect-square"
             alt={liked ? "Liked car" : "Not liked car"}
           />
         </div>
-        <img
+        <Image
           loading="lazy"
           src={image}
           className="object-contain mx-[36px] mt-[90px] w-[232px] h-[72px] aspect-[3.23] max-md:mx-[36px] max-md:mt-[136px]"
@@ -41,7 +42,7 @@ export const CarCard: React.FC<CarCardProps> = ({
         />
         <div className="flex gap-4 ml-[24px] mt-10 text-sm font-medium text-[#90A3BF] max-md:mt-10">
           <div className="flex gap-1.5 items-start tracking-[0.02em] leading-[21px]">
-            <img
+            <Image
               loading="lazy"
               src="/icons/feul.png"
               className="object-contain w-6 aspect-square"
@@ -50,7 +51,7 @@ export const CarCard: React.FC<CarCardProps> = ({
             <div className="w-7">{fuelCapacity}</div>
           </div>
           <div className="flex gap-1.5 items-start tracking-[0.02em] leading-[21px]">
-            <img
+            <Image
               loading="lazy"
               src="/icons/manual.png"
               className="object-contain  w-6 aspect-square"
@@ -59,7 +60,7 @@ export const CarCard: React.FC<CarCardProps> = ({
             <div className="w-12">{transmission}</div>
           </div>
           <div className="flex gap-1.5 items-start">
-            <img
+            <Image
               loading="lazy"
               src="/icons/people.png"
               className="object-contain w-6 aspect-square"

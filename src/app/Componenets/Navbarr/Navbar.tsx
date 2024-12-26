@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const Navbar = () => {
@@ -11,63 +12,72 @@ const Navbar = () => {
             MORENT
           </p>
         </div>
-    
-        <div className="ml-auto md:ml-0">
-          <img
+        <Link href="/Dashboard">
+        <Image
             src="/icons/profile.png"
-            alt="Profile Icon"
-            className="w-[28px] h-[28px] md:hidden rounded-full"
-          />
-        </div>
+           alt="Icon 4"
+           className="w-[44px] h-[44px] lg:hidden"
+        />
+        </Link>
       </div>
 
       
-      <div className="relative w-[263px] md:w-[492px] h-[48px] bg-white border border-[#C3D4E966] rounded-lg mt-4 md:mt-0 md:mx-16 flex items-center">
+      <div className="relative w-[263px] lg:w-[492px] h-[48px] bg-white border border-[#C3D4E966] lg:rounded-full rounded-[10px] mt-4 md:mt-0 md:mx-16 flex items-center">
    
         <input
           type="text"
           placeholder="Search something here"
-          className="w-full h-full pl-10 pr-12 text-[14px] font-medium text-[#596780] bg-white focus:outline-none rounded-lg"
+          className="w-full h-full pl-10 pr-12 text-[14px] font-medium text-[#596780] bg-white  lg:rounded-full rounded-[10px]"
         />
   
         <div className="absolute left-[12px] top-[50%] transform -translate-y-1/2">
-          <img
+          <Image
             src="/icons/search-normal.png"
             alt="Search Icon"
             className="w-[24px] h-[24px]"
           />
         </div>
-       
         <div className="absolute right-[12px] top-[50%] transform -translate-y-1/2">
-          <img
+          <Image
             src="/icons/filter.png"
             alt="Filter Icon"
             className="w-[24px] h-[24px]"
           />
         </div>
       </div>
+      <div className="absolute top-[75px] left-[440px] w-[48px] h-[48px] border border-solid border-[#C3D4E966] rounded-[10px] lg:hidden md:hidden flex justify-center items-center">
+  <Image
+    src="/icons/filter.png"
+    alt="Filter Icon"
+    className="w-[24px] h-[24px]"
+  />
+</div>
+
+
+
+
 
       <div className="hidden md:flex items-center space-x-5 ml-auto">
-        <img
+        <Image
           src="/icons/Like.png"
           alt="Like Icon"
-          className="w-[44px] h-[44px] border border-[#C3D4E966] rounded-full"
+          className="w-[44px] h-[44px] "
         />
-        <img
+        <Image
           src="/icons/Notification.png"
           alt="Notification Icon"
-          className="w-[44px] h-[44px] border border-[#C3D4E966] rounded-full"
+          className="w-[44px] h-[44px]"
         />
-        <img
+        <Image
           src="/icons/Settings.png"
           alt="Settings Icon"
-          className="w-[44px] h-[44px] border border-[#C3D4E966] rounded-full"
+          className="w-[44px] h-[44px] "
         />
         <Link href="/Dashboard">
-         <img
+         <Image
             src="/icons/profile.png"
            alt="Icon 4"
-           className="w-[44px] h-[44px] border border-[#C3D4E966] rounded-full"
+           className="w-[44px] h-[44px] "
         />
         </Link>
       </div>

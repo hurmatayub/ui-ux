@@ -1,5 +1,4 @@
-import { Footer } from "../Componenets/Footer/footer/Footer";
-import Navbar from "../Componenets/Navbarr/Navbar";
+import Image from "next/image";
 
 export default function() {
   return (
@@ -17,32 +16,31 @@ export default function() {
   </div>
 
 
-  <div className="relative w-[132px] h-[108px]  rounded-[8px] mt-[24px] ">
-    <img
+  <div className="flex items-start mt-[24px]">
+
+  <div className="relative w-[132px] h-[108px] ml-7 mt-4  rounded-[8px]">
+    <Image
       src="/images/Look.png"
       alt="Car"
-      className=" w-[188px] h-[120px] -top-[6px] -left-[28px]"
+      className="w-[188px] h-[120px] -top-[6px] -left-[28px] relative"
     />
   </div>
 
- 
-  <div className="flex mt-[24px]">
-    <div className="flex-1">
-      <p className="text-[32px] font-bold leading-[48px] text-[#1A202C]">
-        Nissan GT - R
-      </p>
-      <div className="flex items-center gap-2">
-        <div className="flex gap-1">
-     
-          <img src="/icons/Review Star.png" />
-        </div>
-        <p className="text-[14px] font-medium text-[#596780]">440+ Reviews</p>
+  <div className=" flex-1">
+    <p className="text-[32px] mt-5 font-bold leading-[48px] text-[#1A202C]">
+      Nissan GT - R
+    </p>
+    <div className="flex items-center gap-2">
+      <div className="flex gap-1">
+        <Image src="/icons/Review Star.png" alt="Star" />
       </div>
+      <p className="text-[14px] font-medium text-[#596780]">440+ Reviews</p>
     </div>
   </div>
+</div>
 
   
-  <div className="border-t-[1px] border-[#C3D4E966] opacity-50 my-[16px]"></div>
+  <div className="border-[1px] mb-6 border-[#C3D4E966] opacity-50 my-[20px]"></div>
 
 
   <div className="space-y-4">
@@ -75,7 +73,7 @@ export default function() {
     <p className="text-[32px] font-bold leading-[40px] text-[#1A202C]">$80.00</p>
   </div>
 </div>
-  <Footer />
+   
     </>
   )
 }

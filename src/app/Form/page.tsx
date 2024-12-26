@@ -1,12 +1,14 @@
 import React from "react";
 import CarSummary from "./carSummary";
 import Navbar from "../Componenets/Navbarr/Navbar";
+import { Footer } from "../Componenets/Footer/footer/Footer";
+import Image from "next/image";
 
 export default function BillingInfo() {
   return (
     <>
-    <div className="w-full h-[2260px] mt-[124px] pt-[32px] bg-[#F6F7F9]">
-      <Navbar />
+    <Navbar />
+    <div className="w-full h-[2270px] pt-[32px] bg-[#F6F7F9]">
       {/* billing Info */}
       <div className="w-[852px] h-[336px] bg-[#FFFFFF] rounded-[10px] mx-7 ">
         <div className="flex justify-between items-center px-[24px] pt-[24px]">
@@ -108,7 +110,7 @@ export default function BillingInfo() {
                     placeholder="Select your city"
                     className="w-full h-[56px] border rounded-[10px] px-[16px] text-[14px] font-medium text-[#90A3BF] bg-[#F6F7F9]"
                   />
-                  <img
+                  <Image
                     src="/icons/Arrow-down.png"
                     alt="Arrow"
                     className="absolute w-[14px] h-[14px] top-[50%] right-[16px] transform -translate-y-[50%]"
@@ -124,7 +126,7 @@ export default function BillingInfo() {
                     placeholder="Select your date"
                     className="w-full h-[56px] border rounded-[10px] px-[16px] text-[14px] font-medium text-[#90A3BF] bg-[#F6F7F9]"
                   />
-                  <img
+                  <Image
                     src="/icons/Arrow-down.png"
                     alt="Arrow"
                     className="absolute w-[14px] h-[14px] top-[50%] right-[16px] transform -translate-y-[50%]"
@@ -140,7 +142,7 @@ export default function BillingInfo() {
                     placeholder="Select your time"
                     className="w-full h-[56px] border rounded-[10px] px-[16px] text-[14px] font-medium text-[#90A3BF] bg-[#F6F7F9]"
                   />
-                  <img
+                  <Image
                     src="/icons/Arrow-down.png"
                     alt="Arrow"
                     className="absolute w-[14px] h-[14px] top-[50%] right-[16px] transform -translate-y-[50%]"
@@ -172,7 +174,7 @@ export default function BillingInfo() {
                     placeholder="Select your city"
                     className="w-full h-[56px] border rounded-[10px] px-[16px] text-[14px] font-medium text-[#90A3BF] bg-[#F6F7F9]"
                   />
-                  <img
+                  <Image
                     src="/icons/Arrow-down.png"
                     alt="Arrow"
                     className="absolute w-[14px] h-[14px] top-[50%] right-[16px] transform -translate-y-[50%]"
@@ -188,7 +190,7 @@ export default function BillingInfo() {
                     placeholder="Select your date"
                     className="w-full h-[56px] border rounded-[10px] px-[16px] text-[14px] font-medium text-[#90A3BF] bg-[#F6F7F9]"
                   />
-                  <img
+                  <Image
                     src="/icons/Arrow-down.png"
                     alt="Arrow"
                     className="absolute w-[14px] h-[14px] top-[50%] right-[16px] transform -translate-y-[50%]"
@@ -204,7 +206,7 @@ export default function BillingInfo() {
                     placeholder="Select your time"
                     className="w-full h-[56px] border rounded-[10px] px-[16px] text-[14px] font-medium text-[#90A3BF] bg-[#F6F7F9]"
                   />
-                  <img
+                  <Image
                     src="/icons/Arrow-down.png"
                     alt="Arrow"
                     className="absolute w-[14px] h-[14px] top-[50%] right-[16px] transform -translate-y-[50%]"
@@ -218,7 +220,7 @@ export default function BillingInfo() {
 
       {/* Payment Mehtod */}
       <div className="w-[852px] h-[664px] rounded-[10px] bg-[#FFFFFF] mx-7 mt-7">
-        <div className="w-[852px] h-[596px] bg-white rounded-lg p-6  ">
+        <div className="w-[852px] h-[596px] bg-white rounded-[10px] p-6  ">
           <div className="flex justify-between items-center mb-6 ">
             <div>
               <p className="text-lg font-bold text-[#1A202C]">Payment Method</p>
@@ -231,11 +233,12 @@ export default function BillingInfo() {
             </p>
           </div>
 
-          <div className="w-full h-[270px] bg-[#F6F7F9] rounded-lg p-6 ">
+          <div className="w-full h-[270px] bg-[#F6F7F9] rounded-[10px] p-6 ">
             <div className="flex justify-between items-center mb-8 ">
               <div className="flex items-center gap-2">
-                <img
+                <Image
                   src="/icons/mark.png"
+                  alt=""
                   className="w-4 h-4 rounded-full bg-[#3563E94D]"
                 />
                 <p className="text-base font-semibold text-[#1A202C]">
@@ -243,7 +246,7 @@ export default function BillingInfo() {
                 </p>
               </div>
               <div className="flex gap-3">
-                <img
+                <Image
                   src="/icons/Visa.png"
                   alt="Visa Logo"
                   className="w-[92px]"
@@ -294,13 +297,13 @@ export default function BillingInfo() {
 
           <div className="flex flex-col gap-6 mt-6 ]">
             <div className="w-full h-14 bg-[#F6F7F9] flex items-center gap-4 px-6 rounded">
-              <img
+              <Image
                 src="/icons/iactions-select .png"
                 alt=""
                 className="w-6 h-6"
               />
               <p className="text-sm font-semibold  text-[#1A202C]">PayPal</p>
-              <img
+              <Image
                 src="/icons/PayPal.png"
                 alt="PayPal Icon"
                 className="w-[100px] h-[24px] ml-auto"
@@ -308,13 +311,13 @@ export default function BillingInfo() {
             </div>
 
             <div className="w-full h-14 bg-[#F6F7F9] flex items-center gap-4 px-6 rounded">
-              <img
+              <Image
                 src="/icons/iactions-select .png"
                 alt=""
                 className="w-6 h-6"
               />
               <p className="text-sm font-semibold text-[#1A202C]">Bitcoin</p>
-              <img
+              <Image
                 src="/icons/Bitcoin (1).png"
                 alt="Bitcoin Icon"
                 className="w-[94px] h-[20px] ml-auto"
@@ -325,10 +328,10 @@ export default function BillingInfo() {
       </div>
 
       {/* Confirmation */}
-      <div className="w-[852px] h-[664px] rounded-[10px] bg-[#FFFFFF] mx-7 mt-7">
-        <div className="w-[852px] h-[484px] bg-white rounded-tl-lg p-6">
+      <div className="w-[852px] rounded-[10px] bg-[#FFFFFF] mx-7 mt-7 mb-9">
+        <div className="w-[852px] h-[484px] bg-white rounded-[10px] p-6">
           <div className="flex justify-between items-start gap-4 mb-6">
-            <div className="w-[436px]">
+            <div className="w-[440px]">
               <p className="text-[20px] font-bold text-[#1A202C] leading-[30px]">
                 Confirmation
               </p>
@@ -363,20 +366,21 @@ export default function BillingInfo() {
           </div>
 
           <div className="flex items-center mb-6">
-            <button className="w-[140px] h-[56px] bg-[#3563E9] rounded-lg flex justify-center items-center gap-2 text-white">
+            <button className="w-[140px] h-[56px] bg-[#3563E9] rounded-[10px] flex justify-center items-center gap-2 text-white">
               <p className="text-[16px] font-bold leading-[20px]">Rent Now</p>
             </button>
           </div>
 
           <div className="flex flex-col gap-4">
             <div className="flex items-center">
-              <div className="w-[32px] h-[32px] flex items-center justify-center bg-gray-200 rounded">
-                <img src="/icons/Layer.png" alt="Security Icon" />
+              <div className="w-[32px] h-[32px] flex items-center justify-center">
+                <Image src="/icons/Layer.png" alt="Security Icon" />
               </div>
-              <p className="ml-4 text-[16px] font-semibold text-[#1A202C]">
+              </div>
+              <p className=" text-[16px] font-semibold text-[#1A202C]">
                 All your data are safe
               </p>
-            </div>
+           
 
             <p className="text-[14px] font-medium text-[#90A3BF] leading-[21px]">
               We are using the most advanced security to provide you the best
@@ -386,6 +390,7 @@ export default function BillingInfo() {
         </div>
       </div>
       <CarSummary />
+      <Footer />
     </div>
     </>
   );

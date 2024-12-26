@@ -3,7 +3,6 @@ import { CarCard } from "./CarCards";
 import { SectionHeader } from "./SectionHeader";
 import Link from "next/link";
 
-
 const PopularCars = [
   {
     name: "Koenigsegg",
@@ -13,7 +12,7 @@ const PopularCars = [
     transmission: "Manual",
     capacity: "2 People",
     price: 99,
-    liked: true
+    liked: true,
   },
   {
     name: "Nissan GT - R",
@@ -24,7 +23,7 @@ const PopularCars = [
     capacity: "2 People",
     price: 80,
     originalPrice: 100,
-    liked: false
+    liked: false,
   },
   {
     name: "Rolls - Royce",
@@ -34,7 +33,7 @@ const PopularCars = [
     transmission: "Manual",
     capacity: "4 People",
     price: 96,
-    liked: true
+    liked: true,
   },
   {
     name: "Nissan GT - R",
@@ -45,8 +44,8 @@ const PopularCars = [
     capacity: "2 People",
     price: 80,
     originalPrice: 100,
-    liked: false
-  }
+    liked: false,
+  },
 ];
 
 const recommendedCars = [
@@ -59,7 +58,7 @@ const recommendedCars = [
     capacity: "6 People",
     price: 72,
     originalPrice: 80,
-    liked: false
+    liked: false,
   },
   {
     name: "CR - V",
@@ -69,7 +68,7 @@ const recommendedCars = [
     transmission: "Manual",
     capacity: "6 People",
     price: 80,
-    liked: true
+    liked: true,
   },
   {
     name: "All New Terios",
@@ -79,7 +78,7 @@ const recommendedCars = [
     transmission: "Manual",
     capacity: "6 People",
     price: 74,
-    liked: false
+    liked: false,
   },
   {
     name: "CR - V",
@@ -89,7 +88,7 @@ const recommendedCars = [
     transmission: "Manual",
     capacity: "6 People",
     price: 80,
-    liked: true
+    liked: true,
   },
   {
     name: "MG ZX Exclusice",
@@ -100,7 +99,7 @@ const recommendedCars = [
     capacity: "4 People",
     price: 76,
     originalPrice: 80,
-    liked: true
+    liked: true,
   },
   {
     name: "New MG ZS",
@@ -110,7 +109,7 @@ const recommendedCars = [
     transmission: "Manual",
     capacity: "6 People",
     price: 80,
-    liked: false
+    liked: false,
   },
   {
     name: "MG ZX Excite",
@@ -120,7 +119,7 @@ const recommendedCars = [
     transmission: "Manual",
     capacity: "4 People",
     price: 74,
-    liked: true
+    liked: true,
   },
   {
     name: "New MG ZS",
@@ -130,68 +129,64 @@ const recommendedCars = [
     transmission: "Manual",
     capacity: "6 People",
     price: 80,
-    liked: false
-  }
+    liked: false,
+  },
 ];
 export const PopularCar: React.FC = () => {
   return (
     <>
-    <main
-      className="flex flex-col bg-[#F6F7F9] w-full min-h-screen mt-10 mb-30 gap-[32px] overflow-x-hidden"
-      role="main"
-    >
-      {/* Popular Cars Section */}
-      <section
-        className="flex flex-col max-w-[1200px] mx-auto"
-        aria-label="Popular Cars"
+      <main
+        className="flex flex-col bg-[#F6F7F9] w-full h-auto gap-[32px] overflow-x-hidden"
+        role="main"
       >
-        <SectionHeader title="Popular Car" showViewAll={true} />
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-40  mt-5">
-          {PopularCars.map((car, index) => (
-            <CarCard key={`popular-${index}`} {...car} />
-          ))}
-        </div>
-      </section>
-
-      {/* Recommended Cars Section */}
-      <section
-        className="flex flex-col mt-8 max-w-[1200px] mx-auto"
-        aria-label="Recommended Cars"
-      >
-        <SectionHeader title="Recommendation Car" />
-        <div className="flex flex-col mt-5">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-40 ">
-            {recommendedCars.slice(0, 4).map((car, index) => (
-              <CarCard key={`recommended-1-${index}`} {...car} />
-            ))}
+        <section
+          className="flex flex-col max-w-[1200px] ml-[270px]"
+          aria-label="Popular Cars"
+        >
+          <SectionHeader title="Popular Car" showViewAll={true} />
+          <div className="overflow-x-auto sm:overflow-hidden mt-5">
+            <div className="flex sm:grid sm:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-40">
+              {PopularCars.map((car, index) => (
+                <CarCard key={`popular-${index}`} {...car} />
+              ))}
+            </div>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-40 mt-8">
-            {recommendedCars.slice(4).map((car, index) => (
-              <CarCard key={`recommended-2-${index}`} {...car} />
-            ))}
-          </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Footer Section */}
-      <div className="flex items-center justify-between max-w-[1200px] mx-auto mt-[20px] px-4">
-        <div className="w-[156px] h-[44px] px-[20px] bg-[#3563E9] rounded-[4px] flex items-center justify-center gap-[8px]">
-          <Link href="/Catogory">
-            <p className="font-['Plus Jakarta Sans'] text-[16px] font-semibold leading-[24px] tracking-[-0.02em] text-white text-center">
-              Show more car
+        <section
+          className="flex flex-col mt-8 max-w-[1200px] ml-[270px]"
+          aria-label="Recommended Cars"
+        >
+          <SectionHeader title="Recommendation Car" />
+          <div className="flex flex-col mt-5">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-40 ">
+              {recommendedCars.slice(0, 4).map((car, index) => (
+                <CarCard key={`recommended-1-${index}`} {...car} />
+              ))}
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-40 mt-8">
+              {recommendedCars.slice(4).map((car, index) => (
+                <CarCard key={`recommended-2-${index}`} {...car} />
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <div className="flex items-center justify-between max-w-[1200px] mx-auto mt-[20px] px-4">
+          <div className="w-[156px] h-[44px] px-[20px] bg-[#3563E9] rounded-[4px] flex items-center justify-center gap-[8px]">
+            <Link href="/Catogory">
+              <p className="font-['Plus Jakarta Sans'] text-[16px] font-semibold leading-[24px] tracking-[-0.02em] text-white text-center">
+                Show more car
+              </p>
+            </Link>
+          </div>
+          <div className="text-[#90A3BF]">
+            <p className="font-['Plus Jakarta Sans'] text-[14px] font-medium leading-[21px] tracking-[-0.02em]">
+              120 Car
             </p>
-          </Link>
+          </div>
         </div>
-        <div className="text-[#90A3BF]">
-          <p className="font-['Plus Jakarta Sans'] text-[14px] font-medium leading-[21px] tracking-[-0.02em]">
-            120 Car
-          </p>
-        </div>
-      </div>
-    </main>
+      </main>
     </>
   );
-};
-
-
-
+}
