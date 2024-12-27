@@ -115,6 +115,7 @@ const CarSummary = () => {
                   src="/icons/Review Star.png"
                   alt="Star"
                   width={24}
+                  height={24}
                 />
               </div>
               <p className="text-[14px] font-medium text-[#596780]">440+ Reviews</p>
