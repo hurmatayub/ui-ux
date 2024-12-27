@@ -3,7 +3,7 @@
 
 import Image from "next/image";
 
-export default function RentalSummary() {
+const  carSummary = () => {
   return (
     <>
       <div className="w-[492px] h-[580px] absolute top-[160px] left-[916px] rounded-[10px] bg-white p-6">
@@ -77,3 +77,5 @@ export default function RentalSummary() {
     </>
   );
 }
+
+export default carSummary;
