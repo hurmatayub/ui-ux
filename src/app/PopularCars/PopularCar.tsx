@@ -145,7 +145,7 @@ export const PopularCar: React.FC = () => {
         >
           <SectionHeader title="Popular Car" showViewAll={true} />
           <div className="overflow-x-auto sm:overflow-hidden mt-5">
-            <div className="flex sm:grid sm:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-40">
+            <div className="flex sm:grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-4 gap-x-40">
               {PopularCars.map((car, index) => (
                 <CarCard key={`popular-${index}`} {...car} />
               ))}

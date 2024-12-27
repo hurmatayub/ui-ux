@@ -113,6 +113,8 @@ export default function BillingInfo() {
                   <Image
                     src="/icons/Arrow-down.png"
                     alt="Arrow"
+                    width={14}
+                    height={14}
                     className="absolute w-[14px] h-[14px] top-[50%] right-[16px] transform -translate-y-[50%]"
                   />
                 </div>
@@ -129,6 +131,8 @@ export default function BillingInfo() {
                   <Image
                     src="/icons/Arrow-down.png"
                     alt="Arrow"
+                    width={14}
+                    height={14}
                     className="absolute w-[14px] h-[14px] top-[50%] right-[16px] transform -translate-y-[50%]"
                   />
                 </div>
@@ -145,6 +149,8 @@ export default function BillingInfo() {
                   <Image
                     src="/icons/Arrow-down.png"
                     alt="Arrow"
+                    width={14}
+                    height={14}
                     className="absolute w-[14px] h-[14px] top-[50%] right-[16px] transform -translate-y-[50%]"
                   />
                 </div>
@@ -177,6 +183,8 @@ export default function BillingInfo() {
                   <Image
                     src="/icons/Arrow-down.png"
                     alt="Arrow"
+                    width={14}
+                    height={14}
                     className="absolute w-[14px] h-[14px] top-[50%] right-[16px] transform -translate-y-[50%]"
                   />
                 </div>
@@ -193,6 +201,8 @@ export default function BillingInfo() {
                   <Image
                     src="/icons/Arrow-down.png"
                     alt="Arrow"
+                    width={14}
+                    height={14}
                     className="absolute w-[14px] h-[14px] top-[50%] right-[16px] transform -translate-y-[50%]"
                   />
                 </div>
@@ -209,6 +219,8 @@ export default function BillingInfo() {
                   <Image
                     src="/icons/Arrow-down.png"
                     alt="Arrow"
+                    width={14}
+                    height={14}
                     className="absolute w-[14px] h-[14px] top-[50%] right-[16px] transform -translate-y-[50%]"
                   />
                 </div>
@@ -239,6 +251,8 @@ export default function BillingInfo() {
                 <Image
                   src="/icons/mark.png"
                   alt=""
+                  width={4}
+                  height={4}
                   className="w-4 h-4 rounded-full bg-[#3563E94D]"
                 />
                 <p className="text-base font-semibold text-[#1A202C]">
@@ -249,6 +263,8 @@ export default function BillingInfo() {
                 <Image
                   src="/icons/Visa.png"
                   alt="Visa Logo"
+                  width={92}
+                  height={24}
                   className="w-[92px]"
                 />
               </div>
@@ -300,12 +316,16 @@ export default function BillingInfo() {
               <Image
                 src="/icons/iactions-select .png"
                 alt=""
+                width={6}
+                height={6}
                 className="w-6 h-6"
               />
               <p className="text-sm font-semibold  text-[#1A202C]">PayPal</p>
               <Image
                 src="/icons/PayPal.png"
                 alt="PayPal Icon"
+                width={100}
+                height={24}
                 className="w-[100px] h-[24px] ml-auto"
               />
             </div>
@@ -314,12 +334,16 @@ export default function BillingInfo() {
               <Image
                 src="/icons/iactions-select .png"
                 alt=""
+                width={6}
+                height={6}
                 className="w-6 h-6"
               />
               <p className="text-sm font-semibold text-[#1A202C]">Bitcoin</p>
               <Image
                 src="/icons/Bitcoin (1).png"
                 alt="Bitcoin Icon"
+                width={94}
+                height={20}
                 className="w-[94px] h-[20px] ml-auto"
               />
             </div>
@@ -374,7 +398,7 @@ export default function BillingInfo() {
           <div className="flex flex-col gap-4">
             <div className="flex items-center">
               <div className="w-[32px] h-[32px] flex items-center justify-center">
-                <Image src="/icons/Layer.png" alt="Security Icon" />
+                <Image src="/icons/Layer.png" width={32} height={32} alt="Security Icon" />
               </div>
               </div>
               <p className=" text-[16px] font-semibold text-[#1A202C]">

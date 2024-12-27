@@ -16,7 +16,8 @@ const TopCars = () => {
         <div className="w-[24px] h-[24px]">
           <Image 
             src="/icons/more.png" 
-            alt="Icon" 
+            alt="Icon"
+            width={24} height={24}
             className="w-full h-full" 
           />
         </div>
@@ -26,6 +27,8 @@ const TopCars = () => {
         <Image 
           src="/icons/Chart.png" 
           alt="Chart" 
+          width={220}
+          height={220}
           className="w-full h-full" 
         />
       </div>
@@ -84,3 +87,7 @@ const TopCars = () => {
 };
 
 export default TopCars;
+
+
+
+

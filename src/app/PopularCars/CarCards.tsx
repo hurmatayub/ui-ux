@@ -28,6 +28,8 @@ export const CarCard: React.FC<CarCardProps> = ({
           <Image
             loading="lazy"
             src={liked ? "/icons/Heart.png" : "/icons/disLike.png"}
+            width={24}
+            height={24}
             className="object-contain shrink-0 self-start w-6 mt-[24px] mr-[20px] aspect-square"
             alt={liked ? "Liked car" : "Not liked car"}
           />
@@ -35,6 +37,8 @@ export const CarCard: React.FC<CarCardProps> = ({
         <Image
           loading="lazy"
           src={image}
+          width={232}
+          height={72}
           className="object-contain mx-[36px] mt-[90px] w-[232px] h-[72px] aspect-[3.23] max-md:mx-[36px] max-md:mt-[136px]"
           alt={`${name} ${type} car`}
         />
@@ -43,6 +47,8 @@ export const CarCard: React.FC<CarCardProps> = ({
             <Image
               loading="lazy"
               src="/icons/feul.png"
+              width={24}
+              height={24}
               className="object-contain w-6 aspect-square"
               alt="Fuel capacity icon"
             />
@@ -52,6 +58,8 @@ export const CarCard: React.FC<CarCardProps> = ({
             <Image
               loading="lazy"
               src="/icons/manual.png"
+              width={24}
+              height={24}
               className="object-contain  w-6 aspect-square"
               alt="Transmission type icon"
             />
@@ -61,6 +69,8 @@ export const CarCard: React.FC<CarCardProps> = ({
             <Image
               loading="lazy"
               src="/icons/people.png"
+              width={24}
+              height={24}
               className="object-contain w-6 aspect-square"
               alt="Passenger capacity icon"
             />
@@ -99,3 +109,4 @@ export const CarCard: React.FC<CarCardProps> = ({
     </div>
   );
 };
+

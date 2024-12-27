@@ -76,8 +76,9 @@ export default function Dashboard(){
                 <div className="w-[24px] h-[24px]">
                   <Image src="/icons/briefcase.png" alt="Dark Mode" width={24} height={24} />
                 </div>
+                
                 <p className="text-[#90A3BF] font-medium text-base">Dark Mode</p>
-                <Image src="/icons/toggle.png" alt='' />
+                <Image src="/icons/toggle.png" alt='' width={24} height={24} />
               </div>
             </div>
           </div>
@@ -100,4 +101,7 @@ export default function Dashboard(){
     </>
   );
 }
+
+
+
 

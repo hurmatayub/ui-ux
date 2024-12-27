@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Footer } from "../Footer/footer/Footer";
 import Navbar from "../Navbarr/Navbar";
 import Header from "./Header";
@@ -28,7 +27,7 @@ const Ads = () => {
           </div>
 
           <div className=" w-[196px] h-[56px] sm:w-[406px] sm:h-[116px] top-[172px] left-[53px]">
-            <Image src="/images/carImg1.png" alt="" className="lg:ml-32 " />
+            <img src="/images/carImg1.png" alt="" className="lg:ml-32 " />
           </div>
         </div>
 
@@ -50,7 +49,7 @@ const Ads = () => {
           </div>
 
           <div className="relative w-[406px] h-[116px] ">
-            <Image src="/images/carImg2.png" alt="" className="ml-32  " />
+            <img src="/images/carImg2.png" alt="" className="ml-32  " />
           </div>
         </div>
       </div>

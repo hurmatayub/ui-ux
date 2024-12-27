@@ -17,7 +17,7 @@ const RecentTransaction = () => {
       <div className="absolute top-[80px] left-[24px] w-[476px] flex flex-col gap-[16px]">
   <div className="flex w-[476px] h-[70px] items-center">
     <div className="w-[132px] h-[70px] p-[17px_9px] rounded-[8px]">
-        <Image src='/images/GTR.png' alt='' />
+        <Image src='/images/GTR.png' width={132} height={70} alt='' />
     </div>
     <div className="flex flex-col justify-center gap-[8px] ml-[16px]">
       <p className="font-bold text-[16px] leading-[24px] text-[#1A202C]">
@@ -40,7 +40,7 @@ const RecentTransaction = () => {
 
   <div className="flex w-[476px] h-[60px] items-center">
     <div className="w-[132px] h-[70px] p-[17px_9px] rounded-[8px]">
-        <Image src='/images/Kgg.png' alt='' />
+        <Image src='/images/Kgg.png' width={132} height={70} alt='' />
     </div>
     <div className="flex flex-col justify-center gap-[8px] ml-[16px]">
       <p className="font-bold text-[16px] leading-[24px] text-[#1A202C]">
@@ -63,7 +63,7 @@ const RecentTransaction = () => {
 
   <div className="flex w-[476px] h-[70px] items-center">
     <div className="w-[132px] h-[70px] p-[17px_9px] rounded-[8px]">
-        <Image src='/images/RR.png' alt=''/>
+        <Image src='/images/RR.png' width={132} height={70} alt=''/>
     </div>
     <div className="flex flex-col justify-center gap-[8px] ml-[16px]">
       <p className="font-bold text-[16px] leading-[24px] text-[#1A202C]">
@@ -86,7 +86,7 @@ const RecentTransaction = () => {
 
   <div className="flex w-[476px] h-[70px] items-center">
     <div className="w-[132px] h-[70px] p-[17px_9px] rounded-[8px]">
-        <Image src='/images/CR.png' alt=''/>
+        <Image src='/images/CR.png' width={132} height={70} alt=''/>
     </div>
     <div className="flex flex-col justify-center gap-[8px] ml-[16px]">
       <p className="font-bold text-[16px] leading-[24px] text-[#1A202C]">
@@ -111,3 +111,9 @@ const RecentTransaction = () => {
 };
 
 export default RecentTransaction;
+
+
+
+
+
+

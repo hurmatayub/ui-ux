@@ -20,7 +20,7 @@ export default function page() {
             <div className="space-y-8">
               <div className="flex gap-8">
                 <div className="w-[24px] h-[24px]">
-                  <Image src="/icons/tick-square.png" alt="" />
+                  <Image src="/icons/tick-square.png" width={24} height={24} alt="" />
                 </div>
                 <p className="w-[144px] h-[24px] font-[600] text-[20px] leading-[30px] tracking-[-0.02em] text-justify">
                   Sport <span className="text-[#90A3BF]">(10)</span>
@@ -28,7 +28,7 @@ export default function page() {
               </div>
               <div className="flex gap-8">
                 <div className="w-[24px] h-[24px] ">
-                  <Image src="/icons/tick-square.png" alt="" />
+                  <Image src="/icons/tick-square.png" width={24} height={24} alt="" />
                 </div>
                 <p className="w-[144px] h-[24px] font-[600] text-[20px] leading-[30px] tracking-[-0.02em] text-justify">
                   SUV <span className="text-[#90A3BF]">(12)</span>
@@ -36,7 +36,7 @@ export default function page() {
               </div>
               <div className="flex gap-8">
                 <div className="w-[24px] h-[24px] ">
-                  <Image src="/icons/Ceklist.png" alt="" />
+                  <Image src="/icons/Ceklist.png" width={24} height={24} alt="" />
                 </div>
                 <p className="w-[144px] h-[24px] font-[600] text-[20px] leading-[30px] tracking-[-0.02em] text-justify">
                   MVP <span className="text-[#90A3BF]">(16)</span>
@@ -44,7 +44,7 @@ export default function page() {
               </div>
               <div className="flex gap-8">
                 <div className="w-[24px] h-[24px]">
-                  <Image src="/icons/Ceklist.png" alt="" />
+                  <Image src="/icons/Ceklist.png" width={24} height={24} alt="" />
                 </div>
                 <p className="w-[144px] h-[24px] font-[600] text-[20px] leading-[30px] tracking-[-0.02em] text-justify">
                   Sedan<span className="text-[#90A3BF]">(20)</span>
@@ -52,7 +52,7 @@ export default function page() {
               </div>
               <div className="flex gap-8">
                 <div className="w-[24px] h-[24px]">
-                  <Image src="/icons/Ceklist.png" alt="" />
+                  <Image src="/icons/Ceklist.png" width={24} height={24} alt="" />
                 </div>
                 <p className="w-[144px] h-[24px] font-[600] text-[20px] leading-[30px] tracking-[-0.02em] text-justify">
                   Coupe <span className="text-[#90A3BF]">(14)</span>
@@ -60,7 +60,7 @@ export default function page() {
               </div>
               <div className="flex gap-8">
                 <div className="w-[24px] h-[24px]">
-                  <Image src="/icons/Ceklist.png" alt="" />
+                  <Image src="/icons/Ceklist.png" width={24} height={24} alt="" />
                 </div>
                 <p className="w-[144px] h-[24px] font-[600] text-[20px] leading-[30px] tracking-[-0.02em] text-justify">
                   Hatchback <span className="text-[#90A3BF]">(14)</span>
@@ -78,7 +78,7 @@ export default function page() {
             <div className="space-y-8">
               <div className="flex gap-8">
                 <div className="w-[24px] h-[24px] ">
-                  <Image src="/icons/tick-square.png" alt="" />
+                  <Image src="/icons/tick-square.png" width={24} height={24} alt="" />
                 </div>
                 <p className="w-[144px] h-[24px] font-[600] text-[20px] leading-[30px] tracking-[-0.02em] text-justify">
                   2 Person <span className="text-[#90A3BF]">(10)</span>
@@ -86,7 +86,7 @@ export default function page() {
               </div>
               <div className="flex gap-8">
                 <div className="w-[24px] h-[24px]">
-                  <Image src="/icons/Ceklist.png" alt="" />
+                  <Image src="/icons/Ceklist.png" width={24} height={24} alt="" />
                 </div>
                 <p className="w-[144px] h-[24px] font-[600] text-[20px] leading-[30px] tracking-[-0.02em] text-justify">
                   4 Person <span className="text-[#90A3BF]">(14)</span>
@@ -94,7 +94,7 @@ export default function page() {
               </div>
               <div className="flex gap-8">
                 <div className="w-[24px] h-[24px]">
-                  <Image src="/icons/Ceklist.png" alt="" />
+                  <Image src="/icons/Ceklist.png" width={24} height={24} alt="" />
                 </div>
                 <p className="w-[144px] h-[24px] font-[600] text-[20px] leading-[30px] tracking-[-0.02em] text-justify">
                   6 Person <span className="text-[#90A3BF]">(12)</span>
@@ -102,7 +102,7 @@ export default function page() {
               </div>
               <div className="flex gap-8">
                 <div className="w-[24px] h-[24px] ">
-                  <Image src="/icons/tick-square.png" alt="" />
+                  <Image src="/icons/tick-square.png" width={24} height={24} alt="" />
                 </div>
                 <p className="w-[144px] h-[24px] font-[600] text-[20px] leading-[30px] tracking-[-0.02em] text-justify">
                   8 or more <span className="text-[#90A3BF]">(16)</span>
@@ -115,7 +115,7 @@ export default function page() {
               <p className="w-[104px] h-[20px] font-[600] text-[12px] leading-[15.12px] tracking-[-0.02em] text-left text-[#90A3BF]">
                 P R I C E
               </p>
-              <Image src="/icons/Price-Range.png" alt="" />
+              <Image src="/icons/Price-Range.png" width={104} height={20} alt="" />
             </div>
             <div className="space-y-3">
               <div className="w-[296px] h-[20px] border-4 border-[#FFFFFF]"></div>

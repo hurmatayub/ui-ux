@@ -9,7 +9,7 @@ export default function Header() {
             <div className="flex items-center gap-2">
               <div className="w-[16px] h-[16px]">
                 <Image
-                 src="/icons/mark.png" alt="" />
+                 src="/icons/mark.png" width={16} height={16} alt="" />
               </div>
               <p className="text-[16px] font-semibold text-[#1A202C]">
                 Pick - Up
@@ -24,6 +24,8 @@ export default function Header() {
                   <Image
                     src="/icons/Arrow-down.png"
                     alt="arrow"
+                    width={14}
+                    height={14}
                     className="w-[14px] h-[14px]"
                   />
                 </div>
@@ -37,6 +39,8 @@ export default function Header() {
                   <Image
                     src="/icons/Arrow-down.png"
                     alt="arrow"
+                    width={14}
+                    height={14}
                     className="w-[14px] h-[14px]"
                   />
                 </div>
@@ -50,6 +54,8 @@ export default function Header() {
                   <Image
                     src="/icons/Arrow-down.png"
                     alt="arrow"
+                    width={14}
+                    height={14}
                     className="w-[14px] h-[14px]"
                   />
                 </div>
@@ -59,13 +65,13 @@ export default function Header() {
   
           
           <div className="absolute top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%] z-10">
-  <Image src="/icons/Switch.png" alt="refresh" className="w-30 h-30" />
+  <Image src="/icons/Switch.png" width={30} height={30} alt="refresh" className="w-30 h-30" />
 </div>
   
           <div className="w-[582px] h-[136px] bg-white rounded-[10px] flex flex-col gap-4 p-6 mb-12">
             <div className="flex items-center gap-2">
               <div className="w-[16px] h-[16px] bg-gray-300 rounded-full">
-                <Image src="/icons/mark.png" alt="" />
+                <Image src="/icons/mark.png" width={16} height={16} alt="" />
               </div>
               <p className="text-[16px] font-semibold text-[#1A202C]">
                 Drop - Off
@@ -80,6 +86,8 @@ export default function Header() {
                   <Image
                     src="/icons/Arrow-down.png"
                     alt="arrow"
+                    width={14}
+                    height={14}
                     className="w-[14px] h-[14px]"
                   />
                 </div>
@@ -93,6 +101,8 @@ export default function Header() {
                   <Image
                     src="/icons/Arrow-down.png"
                     alt="arrow"
+                    width={14}
+                    height={14}
                     className="w-[14px] h-[14px]"
                   />
                 </div>
@@ -107,6 +117,8 @@ export default function Header() {
                   <Image
                     src="/icons/Arrow-down.png"
                     alt="arrow"
+                    width={14}
+                    height={14}
                     className="w-[14px] h-[14px]"
                   />
                 </div>
