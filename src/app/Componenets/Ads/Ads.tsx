@@ -2,33 +2,39 @@ import Image from "next/image";
 import { Footer } from "../Footer/footer/Footer";
 import Navbar from "../Navbarr/Navbar";
 import Header from "./Header";
-
 import { PopularCar } from "@/app/PopularCars/PopularCar";
+
 
 const Ads = () => {
   return (
     <>
-      <Navbar />
-      <div className="w-full h-auto bg-[#F6F7F9] py-10 flex justify-center gap-8">
-      <div className="w-[327px] h-[232px] sm:w-[640px] sm:h-[360px] bg-[#54A6FF] rounded-[10px] flex flex-col p-6">
-      <div className="w-[240px] h-[70px] sm:w-[284px] sm:h-[160px] sm:gap-4 gap-[12px] flex flex-col">
-      <p className="w-[240px] h-[20px] sm:w-[284px] sm:h-[160px] text-[16px] font-semibold sm:text-[32px] text-[#FFFFFF] leading-[24px] sm:leading-[48px] tracking-[-0.02em] sm:tracking-[-0.03em] text-left ">
+    <Navbar />
+      <div className="w-full min-h-screen bg-[#F6F7F9] py-10 mt-40 lg:mt-0 flex justify-center gap-8">
+        <div className="w-[327px] h-[232px] sm:w-[640px] sm:h-[360px] bg-[#54A6FF] rounded-[10px] flex flex-col p-6  mt-[-160px] lg:mt-0">
+          <div className="w-[240px] h-[70px] sm:w-[284px] sm:h-[160px] sm:gap-4 gap-[12px] flex flex-col">
+            <p className="w-[240px] h-[20px] sm:w-[284px] sm:h-[160px] text-[16px] font-semibold sm:text-[32px] text-[#FFFFFF] leading-[24px] sm:leading-[48px] tracking-[-0.02em] sm:tracking-[-0.03em] text-left">
               The Best Platform for Car Rental
             </p>
-           <p className="w-[216px] h-[38px] text-[12px] font-medium sm:text-[16px] sm:font-medium text-[#FFFFFF] leading-[19.2px] sm:leading-[24px] tracking-[-0.02em] text-left">
+            <p className="w-[216px] h-[38px] text-[12px] font-medium sm:text-[16px] sm:font-medium text-[#FFFFFF] leading-[19.2px] sm:leading-[24px] tracking-[-0.02em] text-left">
               Ease of doing a car rental safely and reliably. Of course at a low
               price.
             </p>
           </div>
 
           <div className="w-[120px] sm:w-[128px] h-[44px] sm:h-[44px] px-5 sm:px-5 py-5 bg-[#3563E9] rounded-[4px] sm:rounded-[4px] gap-2 flex justify-center items-center text-center mt-4 sm:mt-4">
-          <p className="w-[72px] h-[16px] text-[12px] font-semibold text-[#FFFFFF] leading-[15.12px] tracking-[-0.02em] text-center sm:text-[12px] sm:font-semibold sm:leading-[15.12px] sm:tracking-[-0.02em]">
+            <p className="w-[72px] h-[16px] text-[12px] font-semibold text-[#FFFFFF] leading-[15.12px] tracking-[-0.02em] text-center sm:text-[12px] sm:font-semibold sm:leading-[15.12px] sm:tracking-[-0.02em]">
               Rental Car
             </p>
           </div>
 
           <div className=" w-[196px] h-[56px] sm:w-[406px] sm:h-[116px] top-[172px] left-[53px]">
-            <Image src="/images/carImg1.png" width={196} height={56} alt="" className="lg:ml-32 " />
+            <Image
+              src="/images/car1.png"
+              alt="Car Image"
+              width={406}
+              height={116}
+              className="lg:ml-32"
+            />
           </div>
         </div>
 
@@ -49,16 +55,23 @@ const Ads = () => {
             </p>
           </div>
 
-          <div className="relative w-[406px] h-[116px] ">
-            <Image src="/images/carImg2.png" width={406} height={116} alt="" className="ml-32  " />
+          <div className="w-[340px] h-[108]">
+            <Image
+              src="/images/car2.png"
+              alt="Car Image"
+              width={340}
+              height={108}
+              className="ml-32 mt-175"
+            />
           </div>
         </div>
       </div>
-      <Header />
-      <PopularCar />
-      <Footer />
+     <Header />
+     <PopularCar />
+     <Footer />
     </>
   );
-};
+}
+
 
 export default Ads;

@@ -14,3 +14,5 @@ export interface CarCardProps {
     title: string;
     showViewAll?: boolean;
   }
+
+
