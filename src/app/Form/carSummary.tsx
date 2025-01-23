@@ -1,6 +1,5 @@
 import Image from "next/image";
 
-// Defining the component
 const CarSummary = () => {
   return (
     <>
@@ -77,7 +76,6 @@ const CarSummary = () => {
   );
 };
 
-// Explicitly define displayName to fix ESLint issues
 CarSummary.displayName = "CarSummary";
 
 export default CarSummary;
