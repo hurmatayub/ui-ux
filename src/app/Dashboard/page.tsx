@@ -1,9 +1,8 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
-// import Navbar from "../Components/navbar";
 
-const dashboard = () => {
+const Dashboard = () => {
   const [activeTab, setActiveTab] = useState("dashboard"); // Track the active tab
   const [sidebarOpen, setSidebarOpen] = useState(false); // Toggle sidebar for small screens
 
@@ -110,138 +109,10 @@ const dashboard = () => {
         </div>
         {/* <Navbar /> */}
         {/* Main Section */}
-        <section className="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-6">
-          {/* Details Rental */}
-          <div className="lg:col-span-2 bg-white p-6 rounded-lg shadow-md">
-            <h2 className="text-lg font-bold text-black mb-4">Details Rental</h2>
-            <Image
-              src="/Maps.png"
-              alt="Map"
-              width={600}
-              height={300}
-              className="rounded-lg"
-            />
-            <div className="mt-4 flex justify-between items-center">
-              <div className="flex items-center gap-4">
-                <Image
-                  src="/Look1.png"
-                  alt="Car"
-                  width={60}
-                  height={40}
-                  className="rounded-lg"
-                />
-                <div>
-                  <h3 className="text-lg text-black font-bold">Nissan GT - R</h3>
-                  <p className="text-sm text-gray-500">Sport Car</p>
-                </div>
-              </div>
-              <p className="text-gray-500">#9761</p>
-            </div>
-            <div className="mt-4 grid grid-cols-2 gap-6">
-              <div>
-                <h4 className="text-sm font-bold text-black">Pick-Up</h4>
-                <p className="text-sm text-gray-500">Kota Semarang</p>
-                <p className="text-sm text-gray-500">20 July 2022</p>
-                <p className="text-sm text-gray-500">07:00</p>
-              </div>
-              <div>
-                <h4 className="text-sm font-bold text-black">Drop-Off</h4>
-                <p className="text-sm text-gray-500">Kota Jakarta</p>
-                <p className="text-sm text-gray-500">21 July 2022</p>
-                <p className="text-sm text-gray-500">01:00</p>
-              </div>
-            </div>
-            <div className="mt-6 border-t pt-4 flex justify-between">
-              <p className="font-bold text-black">Total Rental Price</p>
-              <p className="text-lg font-bold text-blue-500">$80.00</p>
-            </div>
-          </div>
-
-          {/* Top 5 Car Rentals */}
-          <div className="bg-white p-6 rounded-lg shadow-md">
-            <h2 className="text-lg font-bold text-black mb-4">Top 5 Car Rentals</h2>
-            <Image
-              src="/Top5.png"
-              alt="Chart"
-              width={300}
-              height={300}
-              className="mx-auto"
-            />
-            <div className="mt-6 text-black">
-              {[
-                { name: "Sport Car", color: "#3563E9", value: 17439 },
-                { name: "SUV", color: "#63A9E8", value: 9478 },
-                { name: "Coupe", color: "#2185DE", value: 18197 },
-                { name: "Hatchback", color: "#175D9C", value: 12510 },
-                { name: "MPV", color: "#0D3559", value: 14406 },
-              ].map((car, index) => (
-                <div key={index} className="flex justify-between items-center">
-                  <div className="flex items-center gap-2">
-                    <div
-                      className="w-3 h-3 rounded-full"
-                      style={{ backgroundColor: car.color }}
-                    ></div>
-                    <p className="text-sm">{car.name}</p>
-                  </div>
-                  <p className="text-sm font-bold">{car.value.toLocaleString()}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Recent Transactions */}
-          <div className="bg-white p-6 rounded-lg shadow-md">
-            <h2 className="text-lg font-bold text-black mb-4">Recent Transactions</h2>
-            <ul className="mt-6 text-black space-y-4">
-              {[
-                {
-                  name: "Nissan GT - R",
-                  date: "20 July",
-                  price: "$80.00",
-                  image: "/car1.png",
-                },
-                {
-                  name: "Koenigsegg",
-                  date: "19 July",
-                  price: "$99.00",
-                  image: "/car2.png",
-                },
-                {
-                  name: "Rolls-Royce",
-                  date: "18 July",
-                  price: "$96.00",
-                  image: "/car3.png",
-                },
-                {
-                  name: "CR - V",
-                  date: "17 July",
-                  price: "$80.00",
-                  image: "/car4.png",
-                },
-              ].map((transaction, index) => (
-                <li key={index} className="flex justify-between items-center">
-                  <div className="flex items-center gap-4">
-                    <Image
-                      src={transaction.image}
-                      alt={transaction.name}
-                      width={50}
-                      height={30}
-                      className="rounded-lg"
-                    />
-                    <div>
-                      <p className="font-bold">{transaction.name}</p>
-                      <p className="text-sm text-gray-500">{transaction.date}</p>
-                    </div>
-                  </div>
-                  <p className="text-blue-500 font-bold">{transaction.price}</p>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </section>
+        {/* Your main content here */}
       </main>
     </div>
   );
 };
 
-export default dashboard;
+export default Dashboard;
