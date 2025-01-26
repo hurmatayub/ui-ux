@@ -12,7 +12,7 @@ const Navbar = () => {
             MORENT
           </p>
         </div>
-        <Link href="/Dashboard">
+        <Link href="/dashboard">
           <Image
             src="/icons/profile.png"
             alt="Profile Icon"
@@ -81,7 +81,7 @@ const Navbar = () => {
           height={44}
           className="w-[44px] h-[44px]"
         />
-        <Link href="/Dashboard">
+        <Link href="/dashboard">
           <Image
             src="/icons/profile.png"
             alt="Profile Icon"
